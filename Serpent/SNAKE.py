@@ -80,7 +80,7 @@ class SERPENT(pygame.sprite.Sprite):
     LISTE_COLLISION_NOURRITURE = pygame.sprite.spritecollide(self, LISTE_NOURRITURE, False)
     for nourriture in LISTE_COLLISION_NOURRITURE:
       nourriture.kill()
-      self.AJOUTER_NOUVEAU_CORPS(1)
+      self.AJOUTER_NOUVEAU_CORPS()
       self.SON_NOURRITURE.play()
       self.POINTS += POINT_UNITE
 
